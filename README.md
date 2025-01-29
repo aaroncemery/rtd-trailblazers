@@ -1,68 +1,54 @@
-🚌 Trailblazer – Sanity CMS
-Welcome to the Trailblazer project! This repository contains the Sanity CMS configuration for managing bus routes, stops, schedules, and related data. This serves as the content backend for the Trailblazer platform.
+# 🚌 Trailblazer – Sanity CMS (Starter Repo)
 
-🚀 Getting Started
-1️⃣ Prerequisites
-Ensure you have the following installed on your machine:
+This repository serves as a **starting point** for the **Sanity CMS** configuration for the Trailblazer project. It contains initial schemas and ideas that the team can reference as they set up their own Sanity instance in the main repository.
 
-Node.js (Latest LTS recommended) → Download
-pnpm (Recommended) → Install via npm install -g pnpm
-Sanity CLI → Install via npm install -g @sanity/cli
-A Sanity project (Ask the team for project details)
-2️⃣ Clone the Repository
-sh
-Copy
-Edit
+---
+
+## 🚀 Purpose of This Repo
+
+This repo is **not** the main working repo for Trailblazer. Instead, it provides:
+
+- ✅ **Example schemas** to help structure content for routes, buses, stops, and schedules.  
+- ✅ **Initial setup and configuration** for Sanity Studio.  
+- ✅ **A place to explore and iterate** on Sanity's structure before finalizing the main implementation.  
+
+The team should take what they need from here and integrate it into their own repo.
+
+---
+
+## 📂 What's in This Repo?
+
+```sh
+/sanity.config.ts  # Base Sanity config file
+/schemas/          # Example schemas (routes, buses, stops, schedules, etc.)
+/plugins/          # Any useful Sanity plugins or customizations
+/deskStructure.ts  # Example custom desk UI structure
+```
+## 🛠 How to Use This Repo
+### 1️⃣ Clone this repo locally
+```sh
 git clone https://github.com/your-org/trailblazer-sanity.git
 cd trailblazer-sanity
-3️⃣ Install Dependencies
-sh
-Copy
-Edit
+```
+### 2️⃣ Install dependencies
+```sh
 pnpm install
-4️⃣ Connect to the Sanity Project
-If this is your first time setting up, link the repo to the Sanity project:
-
-sh
-Copy
-Edit
-sanity login
-sanity link
-Ask the team for the correct Sanity project ID if needed.
-
-5️⃣ Start the Studio
-Run the following command to launch the local Sanity Studio:
-
-sh
-Copy
-Edit
+```
+### 3️⃣ Start the local Sanity Studio
+```sh
 pnpm dev
+```
 This will open the studio at http://localhost:3333.
 
-📁 Project Structure
-bash
-Copy
-Edit
-/sanity.config.ts  # Main Sanity config file
-/schemas/          # All schema definitions (routes, buses, stops, etc.)
-/plugins/          # Custom plugins (if any)
-/deskStructure.ts  # Customization for the Sanity desk UI
-🏗 Features
-Bus Route & Stop Management 🏁
-Schedules & Driver Assignments 📆
-Sanity CMS for easy content updates ✨
-Custom roles & permissions 🔐
-📌 Next Steps
-Add more schemas for additional features
-Customize the Sanity Studio UI
-Set up webhooks for real-time updates
-🤝 Contributing
-Create a feature branch: git checkout -b feature-name
-Commit your changes: git commit -m "Added new schema"
-Push to the repo: git push origin feature-name
-Open a Pull Request 🚀
-💬 Questions?
-Reach out on Slack or tag @your-name in GitHub issues.
+### 4️⃣ Review & Copy what you need
 
-Happy coding! 🚀
+- Modify and experiment with schemas.
+- Take relevant parts and integrate them into the main working repo.
 
+## 🔄 Keeping Things Up to Date
+Since this is a reference repo, updates will be made as needed to refine schemas or provide new ideas. The main working repo will have its own active development process.
+
+## 🤝 Questions?
+For any questions, reach out on Slack or open a discussion in the main repo.
+
+Happy building! 🚀
